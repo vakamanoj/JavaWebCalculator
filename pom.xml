@@ -21,10 +21,45 @@
     <version>2.5</version>
 </dependency>
 </dependencies>
-<distributionManagement>
-  <repository>
-    <id>releases</id>
-        <url>http://52.204.135.48:8081/nexus/content/repositories/releases</url>
-  </repository>
-</distributionManagement>
+<profiles>
+
+<profile>
+<id>qa</id>
+<build>
+<plugins>
+<plugin>
+    <groupId>org.apache.tomcat.maven</groupId>
+    <artifactId>tomcat7-maven-plugin</artifactId>
+    <version>2.2</version>
+    <configuration>
+        <url>http://18.212.231.1:9090/manager/text</url>
+        <server>TomcatServer</server>
+        <path>/qa</path>
+    </configuration>
+</plugin>
+</plugins>
+</build>
+</profile>
+
+<profile>
+<id>prod</id>
+<build>
+<plugins>
+<plugin>
+    <groupId>org.apache.tomcat.maven</groupId>
+    <artifactId>tomcat7-maven-plugin</artifactId>
+    <version>2.2</version>
+    <configuration>
+        <url>http://3.85.51.89:8080/manager/text</url>
+        <server>TomcatServer</server>
+        <path>/prod</path>
+    </configuration>
+</plugin>
+</plugins>
+</build>
+</profile>
+</profiles>
+
+
+
 </project>
