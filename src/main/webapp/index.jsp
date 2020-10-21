@@ -21,7 +21,7 @@
 <input type="radio" name="r2" value="sub" />subtraction 
 <br />
 <label>
-<input type="radio" name="r1" value="mul" />multiple
+<input type="radio" name="r3" value="div" />divide
 <br />
 
  
