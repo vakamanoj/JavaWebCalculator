@@ -20,6 +20,9 @@
 </label>
 <input type="radio" name="r2" value="sub" />subtraction 
 <br />
+</label>
+<input type="radio" name="r3" value="mult" />multiply
+<br />
 
  
 </div>
