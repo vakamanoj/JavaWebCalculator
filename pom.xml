@@ -24,7 +24,7 @@
 <profiles>
 
 <profile>
-<id>qa</id>
+<id>qawebcal</id>
 <build>
 <plugins>
 <plugin>
