@@ -4,7 +4,7 @@
   <groupId>com.web.cal</groupId>
   <artifactId>WebAppCal</artifactId>
   <packaging>war</packaging>
-  <version>0.0.5</version>
+  <version>0.1</version>
   <name>WebAppCal Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
@@ -24,7 +24,7 @@
 <profiles>
 
 <profile>
-<id>qawebcal</id>
+<id>qa</id>
 <build>
 <plugins>
 <plugin>
@@ -32,9 +32,9 @@
     <artifactId>tomcat7-maven-plugin</artifactId>
     <version>2.2</version>
     <configuration>
-        <url>http://18.212.231.1:9090/manager/text</url>
+        <url>http://34.228.11.190:9090/manager/text</url>
         <server>TomcatServer</server>
-        <path>/qawebcal</path>
+        <path>/qa</path>
     </configuration>
 </plugin>
 </plugins>
