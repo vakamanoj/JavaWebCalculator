@@ -34,7 +34,7 @@
     <configuration>
         <url>http://18.212.231.1:9090/manager/text</url>
         <server>TomcatServer</server>
-        <path>/qa</path>
+        <path>/qawebcal</path>
     </configuration>
 </plugin>
 </plugins>
