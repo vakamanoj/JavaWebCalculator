@@ -2,10 +2,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title style="color:red">Calculator</title>
+<title>Calculator</title>
 </head>
 <body>
-<h1 style="text_align=center">Calculator</h1>
+<h2 style="text_align=center">Web Calculator</h2>
       <form action="firstHomePage" method="get">
 <label>first number:</label>
 <input type="text" name="n1" />
